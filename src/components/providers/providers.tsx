@@ -13,7 +13,7 @@ const cards = [
     },
     {
         title: "HR Consulting",
-        image: ["/images/service3.png", "/images/servic6.png"]
+        image: ["/images/service3.png", "/images/service-4-350x220.jpg.png"]
     },
     {
         title: "Leadership Training",
