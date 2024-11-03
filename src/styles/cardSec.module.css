@@ -1,0 +1,29 @@
+/* CardSec Container */
+.cardSec {
+    display: flex;
+    justify-content: center; /* Center cards horizontally */
+    gap: 20px; /* Space between cards */
+    padding: 40px 20px; /* Padding around the section */
+    flex-wrap: wrap;
+}
+
+/* Individual Card */
+.card {
+    background-color: #fff; /* Default background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    overflow: hidden; /* Prevents overflow of child elements */
+    transition: transform 0.3s; /* Animation for hover effect */
+    width: 300px; /* Fixed width for cards */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+@media (max-width:481px) {
+    .cardSec{
+        padding-top: 120px;
+    }
+    
+}

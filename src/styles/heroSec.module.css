@@ -1,0 +1,144 @@
+.heroSection {
+    display: flex;
+    flex-direction: row; /* Stack the image containers vertically */
+    align-items: center; /* Center the containers */
+    justify-content: space-between; /* Distribute space evenly */
+    height: 100vh; /* Make sure the section takes full height */
+    
+}
+
+.imageContainer {
+    display: flex;
+    flex-direction: column; /* Stack the image and text horizontally */
+    justify-content: space-evenly; /* Space out the items in the container */
+    align-items: center; /* Align items vertically */
+    width: 100%; /* Full width */
+    margin-bottom: 20px; /* Space between rows */
+    flex-grow: 1;
+    height: 100vh;
+}
+
+.centerContent {
+    flex-grow: 1; /* Take the full remaining width */
+    text-align: center; /* Center text */
+    padding: 20px 2px; /* Add some padding */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.heading{
+    font-size: 40px;
+    font-weight: 900 !important;
+}
+.para{
+    color: #7D7D7D;
+    padding: 8px 0px;
+}
+.centerImg{
+    height: 150px;
+    width: 500px;
+}
+
+.silder2 {
+    width: 180px;
+    height: auto;
+}
+.silder1{
+    width: 100px;
+    height: auto;
+}
+
+@media (max-width:1023px) {
+
+    .heading{
+    font-size: 34px;
+    font-weight: 900 !important;
+}
+.para{
+    padding: 8px 0px;
+    font-size: 16px;
+}
+.centerImg{
+    height: 100px;
+    width: 350px;
+}
+
+.silder2 {
+    width: 150px;
+    height: auto;
+}
+.silder1{
+    width: 80px;
+    height: auto;
+}
+
+}
+@media (max-width: 768px) {
+    .heading{
+        font-size: 28px;
+        font-weight: 900 !important;
+    }
+    .para{
+        padding: 6px 0px;
+        font-size: 14px;
+    }
+    .centerImg{
+        height: 70px;
+        width: 240px;
+    }
+    
+    .silder2 {
+        width: 95px;
+        height: auto;
+    }
+    .silder1{
+        width: 80px;
+        height: auto;
+    }
+    
+}
+
+@media (max-width: 481px) {
+
+   
+
+    .heroSection {
+        display: flex;
+        flex-direction: column; /* Stack the image containers vertically */
+        align-items: center; /* Center the containers */
+        justify-content: space-between; /* Distribute space evenly */
+        height: 100vh; /* Make sure the section takes full height */
+        padding: 30px 0px 10px;
+    }
+    .imageContainer {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-evenly;
+        background-color: #fdf6ff;
+        padding-bottom: 20px;
+        margin-bottom: 0px;
+    }
+    .heading{
+        font-size: 20px;
+        margin-top: 2px;
+    }
+    .para{
+        padding: 6px 0px;
+        font-size: 12px;
+    }
+    .centerContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 20px;
+        padding-top: 5px;
+    }
+}
+
+.bgImg{
+  background-color: #fdf6ff;
+  height: 100vh;
+  padding-bottom: 40px;
+}

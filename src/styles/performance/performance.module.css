@@ -1,0 +1,44 @@
+.mainContainer {
+    background-color: #f9f9f9; /* Light background color for main container */
+    padding: 40px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.heading {
+    color: #222737; /* Dark color for heading */
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #7D7D7D; /* Gray color for paragraph */
+    font-size: 1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    width: 100%;
+    text-align: center;
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: bold;
+    color: #222737;
+    margin-bottom: 20px;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap; /* Wrap cards to new line if screen is small */
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 22px;
+    }
+    .description{
+        font-size: 14px;
+    }
+}

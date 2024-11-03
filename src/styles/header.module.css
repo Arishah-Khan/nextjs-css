@@ -1,0 +1,117 @@
+/* styles/header.module.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+
+    position: relative;
+}
+
+.logo {
+    flex-shrink: 0;
+    height: auto;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Desktop navigation styles */
+.nav {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+}
+
+.buttonContainer {
+    display: none;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 840px) {
+   /* styles/header.module.css */
+.nav {
+    display: none; /* Hide nav by default on mobile */
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff; /* Background color for the nav */
+    position: absolute;
+    top: 70px; /* Positioning below the header */
+    right: 20px;
+    width: 90%; /* Width adjustment */
+    max-width: 100%;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+    animation: slideIn 0.3s forwards; /* Add animation */
+    opacity: 0; /* Start hidden */
+    transform: translateX(20px); /* Start from right side */
+}
+
+/* Animation keyframes */
+@keyframes slideIn {
+    0% {
+        opacity: 0; /* Fully transparent */
+        transform: translateX(20px); /* Start position */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: translateX(0); /* Final position */
+    }
+}
+
+/* Open menu styles */
+.open .nav {
+    display: flex; /* Show nav when open */
+}
+
+/* Rest of your CSS... */
+
+
+    .hamburger {
+        display: block; /* Show hamburger on mobile */
+    }
+
+    /* Show nav when menu is open */
+    .open {
+        display: flex;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Button positioned below menu */
+    .buttonContainer {
+        margin-top: 15px; /* Space between menu and button */
+        display: flex; /* Display button only when menu is open */
+        justify-content: center; /* Center button */
+    }
+    .buttonSet{
+        display: none;
+    }
+}
+
+@media (max-width:481px) {
+    .nav{
+        padding: 20px 0px;
+    }
+    .header{
+        padding:5px;
+    }
+}

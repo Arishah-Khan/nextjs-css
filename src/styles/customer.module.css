@@ -1,0 +1,59 @@
+.customerContainer {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    text-align: left;
+}
+
+.imageContainer {
+    flex: 1;
+}
+
+.textContainer {
+    flex: 1;
+}
+
+.iconContainer {
+    margin-bottom: 10px;
+}
+
+.heading {
+    color: #222737; /* Color for heading */
+    font-size: 1.8rem;
+    margin: 0 0 15px;
+}
+
+.firstParagraph {
+    color: #222737; 
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-weight: bold; 
+    font-style: italic;
+}
+
+.secondParagraph {
+    color: #7D7D7D; /* Gray color for the subtitle */
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .customerContainer {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    .setWidth{
+        width: 280px;
+        height: 280px;
+    }
+    .firstParagraph {
+        font-size: 14px;
+    
+    }
+    .heading {
+        font-size: 22px;
+    }
+}

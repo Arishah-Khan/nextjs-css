@@ -1,0 +1,115 @@
+.contactSection {
+    background-color: #9867FF; /* Background color */
+    color: white; /* Text color */
+    padding: 20px; /* Padding for the section */
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center; /* Center items horizontally */
+}
+
+.contactContainer {
+    text-align: center; /* Center text */
+}
+
+.description {
+    margin: 10px 0; /* Spacing around the description */
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px 0;
+}
+
+.inputContainer input {
+    padding: 12px 50px 12px 12px; /* Adds padding-right for the button overlap */
+    border: none;
+    border-radius: 30px;
+    width: 250px;
+}
+
+.inputContainer button {
+    position: absolute;
+    right: -10px; 
+    background-color: #222737;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 1;
+    top: 0;
+
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+    margin-top: 15px; /* Space above icons */
+}
+
+.icon {
+    background-color: white; /* Icon background color */
+    color: #9867FF; /* Icon color */
+    border-radius: 50%; /* Makes the div circular */
+    width: 50px; /* Circle width */
+    height: 50px; /* Circle height */
+    display: flex; /* Flexbox for centering icon */
+    justify-content: center; /* Center icon */
+    align-items: center; /* Center icon */
+    font-size: 24px; /* Size of the icons */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.icon:hover {
+    background-color: #9867FF; /* Change background on hover */
+    color: white; /* Change icon color on hover */
+}
+
+.linksContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Evenly distribute the link lists */
+    width: 100%; /* Full width for the link container */
+    margin-top: 20px; /* Spacing above the links */
+}
+
+.linksContainer ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.linksContainer li {
+    margin: 5px 0; /* Space between link items */
+}
+
+@media (max-width: 768px) {
+    .contactSection{
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+        flex-direction: column; /* Change to column layout for smaller screens */
+    }
+    .list{
+        font-size: 12px;
+    }
+    .ulHeading{
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+    .inputContainer input {
+        width: 210px;
+    }
+    .inputContainer button {
+        right: 50px; 
+    
+    }
+}
+
+@media (max-width:480px) {
+    .inputContainer button {
+        right: 10px; 
+    
+    }
+}

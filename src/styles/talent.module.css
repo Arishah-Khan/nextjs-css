@@ -1,0 +1,90 @@
+.talentSection {
+    background-image: url('/images/bgImage.png');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.talentContent {
+    max-width: 600px;
+    width: 90%;
+}
+
+.talentContent h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.talentContent p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.inputContainer {
+    display: flex;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.inputContainer input[type="email"] {
+    padding: 10px;
+    flex: 1;
+    border-radius: 20px;
+    outline: none;
+    font-size: 1rem;
+    color: #333;
+}
+
+.inputContainer input::placeholder {
+    color: #888;
+}
+
+.inputContainer button {
+    padding: 10px 20px;
+    color: #222737;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .talentContent h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .talentSection {
+        padding: 30px 0px;
+    }
+
+    .talentContent h2 {
+        font-size: 1.25rem;
+    }
+
+    .talentContent p {
+        font-size: 0.9rem;
+    }
+
+    .inputContainer button {
+        padding: 0px 10px;
+    }
+    .inputContainer input::placeholder {
+        font-size: 12px;
+    }
+}

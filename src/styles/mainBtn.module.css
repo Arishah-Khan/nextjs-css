@@ -1,0 +1,45 @@
+/* styles/header.module.css */
+.button {
+    background-color: #9867FF;
+    color: #fff;
+    border: none;
+    padding: 10px 14px;
+    font-size: 14px;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #7a54d6; /* Slightly darker shade on hover */
+  }
+  
+  .arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #9867FF;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 8px; /* Space between arrow and text */
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .button {
+      font-size: 12px;
+      padding: 8px 12px;
+    }
+    
+  }
+  @media (max-width: 481px) {
+    .button {
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+    
+  }

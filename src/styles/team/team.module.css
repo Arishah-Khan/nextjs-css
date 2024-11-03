@@ -1,0 +1,47 @@
+.teamSection {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 26px;
+    color: #222737;
+    margin-bottom: 30px;
+}
+
+.gridContainer {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr); /* Default to single column */
+}
+
+@media (min-width: 640px) {
+    .gridContainer {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards for medium screens */
+    }
+    .heading {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .gridContainer {
+        grid-template-columns: repeat(4, 1fr); /* 4 cards for large screens */
+    }
+}
+
+.gridContainer > :nth-child(1) {
+    margin-top: -10px; /* Shift first card slightly up */
+}
+
+.gridContainer > :nth-child(2) {
+    margin-top: 20px; /* Shift second card slightly down */
+}
+
+.gridContainer > :nth-child(3) {
+    margin-top: -10px; /* Shift third card slightly up */
+}
+
+.gridContainer > :nth-child(4) {
+    margin-top: 20px; /* Shift fourth card slightly down */
+}

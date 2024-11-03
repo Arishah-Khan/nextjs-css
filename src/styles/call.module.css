@@ -1,0 +1,85 @@
+.callSection {
+    background-color: #f7f3ff;
+    padding: 30px 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.textContent {
+    max-width: 400px;
+    text-align: center;
+}
+
+.callSection h2 {
+    font-size: 2rem;
+    color: #222737;
+    margin-bottom: 10px;
+}
+
+.callSection p {
+    font-size: 1rem;
+    color: #7d7d7d;
+    margin-bottom: 20px;
+}
+
+.callForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.callForm input[type="text"],
+.callForm input[type="email"],
+.callForm textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+
+
+.callForm button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.imageContainer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+     .image{
+      display: none;
+     }
+
+    .imageContainer {
+        margin-top: 20px;
+    }
+    .callSection h2 {
+        font-size: 24px;
+    }
+    .callSection{
+        padding: 30px 30px 50px;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .callSection h2 {
+        font-size: 20px;
+    }
+
+    .callSection p {
+        font-size: 14px;
+    }
+
+    .callForm input,
+    .callForm textarea {
+        font-size: 0.9rem;
+    }
+}
