@@ -4,7 +4,7 @@ import styles from "@/styles/card.module.css"; // Import your styles if needed
 interface CardProps {
     image: string;
     heading: string;
-    bgColour: string; // Add bgColour prop
+    bgColour: string; 
 }
 
 export default function Card({ image, heading, bgColour }: CardProps) {

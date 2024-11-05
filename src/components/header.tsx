@@ -5,9 +5,12 @@ import MainBtn from "./buttons/button";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import styles from "@/styles/header.module.css";
+import Link from "next/link";
+import { usePathname } from "next/navigation"; // Import usePathname
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const pathname = usePathname(); // Get current path
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -25,14 +28,25 @@ export default function Header() {
 
             <nav className={`${styles.nav} ${isMenuOpen ? styles.open : ""}`}>
                 <ul className={styles.menu}>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Services</li>
-                    <li>Case Studies</li>
-                    <li>Blog</li>
-                    <li>Contact Us</li>
+                    <li>
+                        <Link href="/" className={pathname === "/" ? styles.active : ""}>Home</Link>
+                    </li>
+                    <li>
+                        <Link href="/about" className={pathname === "/about" ? styles.active : ""}>About Us</Link>
+                    </li>
+                    <li>
+                        <Link href="/services" className={pathname === "/services" ? styles.active : ""}>Services</Link>
+                    </li>
+                    <li>
+                        <Link href="/cases" className={pathname === "/cases" ? styles.active : ""}>Case Studies</Link>
+                    </li>
+                    <li>
+                        <Link href="/blog" className={pathname === "/blog" ? styles.active : ""}>Blog</Link>
+                    </li>
+                    <li>
+                        <Link href="/contact" className={pathname === "/contact" ? styles.active : ""}>Contact Us</Link>
+                    </li>
                 </ul>
-                {/* Button placed here, below the menu */}
                 {isMenuOpen && (
                     <div className={styles.buttonContainer}>
                         <MainBtn text="Get A Quote" />

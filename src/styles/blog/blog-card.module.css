@@ -1,0 +1,67 @@
+/* Container for the Blog Card */
+.cardContainer {
+    background-color: #f5f0ff;
+    padding: 20px;
+    border-radius: 8px;
+    width:250px;
+    text-align: center;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Container */
+.imageContainer {
+    margin-bottom: 15px;
+}
+
+/* Span styling */
+.spans {
+    display: flex;
+    justify-content: start;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.spans span {
+    color: #f5f0ff;
+    background-color: #9867FF;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Heading styling */
+.heading {
+    color: #222737;
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+/* Paragraph styling */
+.para {
+    color: #7D7D7D;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.readmore{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.read-more Link {
+    color: #9867FF;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.arrow {
+    margin-left: 5px;
+}

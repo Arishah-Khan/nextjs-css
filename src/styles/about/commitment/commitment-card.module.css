@@ -1,0 +1,29 @@
+/* Card.module.css */
+
+.cardSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px; /* Slight border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for a card-like effect */
+    background-color: #fff; /* Background color */
+    width: 200px;
+    text-align: center;
+}
+
+.imageContainer {
+    margin-bottom: 15px;
+}
+
+.heading {
+    color: #222737; /* Custom color for heading */
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.description {
+    color: #7D7D7D; /* Subtle color for the description text */
+    font-size: 14px;
+    line-height: 1.6;
+}

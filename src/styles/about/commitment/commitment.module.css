@@ -1,0 +1,118 @@
+/* Root styling for main container */
+.main {
+    padding: 20px;
+    color: #222737;
+    background-color: #f3f3f3;
+    padding: 50px 20px;
+}
+
+/* Title Styling */
+.heading {
+    font-size: 24px;
+    color: #222737;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.position{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Flex container for the intro section */
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Styling for the span elements */
+
+.span{
+    background-color: #FFFFFF;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.intro div span {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.intro div span:first-child {
+    background-color: #9867FF;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 7px 20px;
+}
+
+.intro div span:nth-child(2),
+.intro div span:nth-child(3) {
+    
+    color: #9867FF;
+}
+
+/* Paragraph styling */
+.intro p {
+    color: #7D7D7D;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+/* Grid layout for the card section */
+.cardGrid {
+   display: flex;
+   flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 22px;
+    }
+    
+    .intro div span {
+        font-size: 14px;
+    }
+
+    .intro p {
+        font-size: 14px;
+    }
+    .position{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main{
+        padding: 40px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 20px;
+    }
+
+    .intro div span {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .intro p {
+        font-size: 12px;
+    }
+}

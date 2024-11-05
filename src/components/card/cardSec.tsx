@@ -1,9 +1,9 @@
 import Card from "./card";
-import styles from "@/styles/cardSec.module.css"; // Import your CSS module
+import styles from "@/styles/cardSec.module.css"; 
 
 export default function CardSec() {
     return (
-        <section className={styles.cardSec}> {/* Apply the CSS class here */}
+        <section className={styles.cardSec}>
             <div>
                 <Card 
                     image="/images/card1.png"

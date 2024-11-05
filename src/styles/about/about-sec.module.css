@@ -1,0 +1,88 @@
+/* Root flexbox layout for the section */
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Flex container for image and text */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; /* Space between columns */
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Styling for Image */
+.imageContainer {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.textSec{
+    margin-right: 30px;
+}
+
+/* Responsive font sizes */
+.heading {
+    color: #222737;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.subheading {
+    color: #9867FF;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.paragraph {
+    color: #7D7D7D;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .section {
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 22px;
+    }
+    .subheading {
+        font-size: 18px;
+    }
+    .paragraph {
+        font-size: 14px;
+        text-align: center;
+    }
+    .content{
+        grid-template-columns: 1fr;
+        flex-direction: row-reverse;
+        gap: 20px;
+    }
+    .setImg{
+        width: 280px;
+        height: 250px;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 20px;
+    }
+    .subheading {
+        font-size: 16px;
+    }
+    .paragraph {
+        font-size: 12px;
+    }
+}

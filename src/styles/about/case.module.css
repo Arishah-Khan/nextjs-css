@@ -1,0 +1,59 @@
+/* Main container styling */
+.main {
+    padding: 10px;
+    text-align: center;
+    color: #222737;
+}
+
+/* Title Styling */
+.h1 {
+    font-size: 28px;
+    color: #222737;
+    margin-bottom: 20px;
+    padding: 30px 10px;
+}
+
+/* Flex container for images */
+.imageFlex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding-bottom: 40px;
+    margin: 0px 70px;
+}
+
+/* Styling for each image */
+.imageFlex img {
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect on images */
+.imageFlex img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .h1 {
+        font-size: 24px;
+    }
+
+    .imageFlex img {
+        width: 50%; /* Fits two images per row on medium screens */
+        margin: 0px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .h1 {
+        font-size: 20px;
+    }
+
+    .imageFlex img {
+        width: 100%; /* Stacks images on small screens */
+    }
+}

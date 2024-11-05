@@ -1,9 +1,5 @@
-/* styles/global.css */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Sora:wght@600;700;900&display=swap');
-
-
-body {
-  font-family: 'Poppins';
+body{
+  font-family: 'Poppins' , sans-serif;
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
@@ -15,5 +11,5 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Sora';
+  font-family: 'Sora' , sans-serif;
 }

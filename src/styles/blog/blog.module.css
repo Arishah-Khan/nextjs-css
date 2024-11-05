@@ -1,0 +1,20 @@
+/* Main container styling */
+.main {
+    padding: 40px; /* Add some padding around the main section */
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+/* Blog section container */
+.blogSec {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Space out the blog cards */
+    gap: 20px; /* Space between cards */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .blogSec {
+        justify-content: center; /* Center items on smaller screens */
+    }
+}

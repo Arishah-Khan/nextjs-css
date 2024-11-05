@@ -1,0 +1,118 @@
+/* Container styles for the entire section */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px;
+    background-color: #f4f4f9; /* Light background color for contrast */
+}
+
+.textSection {
+    flex: 1;
+}
+
+.formSection {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Heading styles */
+.heading {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.para {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Icon and text alignment */
+.iconText {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #7D7D7D; /* Light purple for the icons */
+    margin-bottom: 15px;
+}
+
+.iconText span {
+    margin-right: 10px; /* Space between icon and text */
+    color: #6a0dad;
+}
+
+/* Form styling */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%; /* Ensure form takes full width */
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form input[type="text"],
+.form input[type="number"] {
+    padding-right: 30px;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+    color: #aaa;
+}
+
+/* Adjust field layout */
+.field {
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .form input[type="text"],
+.form input[type="number"] {
+    padding-right: 10px;
+}
+    
+    /* Make fields stack vertically on smaller screens */
+    .field {
+        flex-direction: column;
+        width: 100%; /* Full width for each input */
+    }
+
+    .formSection {
+        width: 100%; /* Allow full width */
+        justify-content: flex-start; /* Align to start */
+    }
+
+    .form {
+        width: 90%; /* Make form take full width */
+    }
+    .heading{
+        font-size: 26px;
+    }
+    .para{
+        font-size: 14px;
+    }
+    .iconText{
+        font-size: 14px;
+    }
+}
+
